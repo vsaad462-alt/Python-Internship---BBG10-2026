@@ -1,1 +1,5 @@
-
+name="saad vahora"
+age=20
+city="anand"
+language="python"
+print("My name  is " + name +",I am "+str(age) +"years old,I live in " + city +" ,and Iam learning " + language +".")
