@@ -1,12 +1,10 @@
-price_per_notebook = 45
-budget = 500
-quantity = 7
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
-total_cost = price_per_notebook * quantity
-maximum_notebooks = budget // price_per_notebook
-money_left = budget % price_per_notebook
+transpose = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 
-print("total cost:", total_cost)
-print("notebooks purchasable:", maximum_notebooks)
-print("money left:", money_left)
-
+for row in transpose:
+    print(row)
